@@ -2,7 +2,7 @@ import { FaCommentDots } from "react-icons/fa";
 
 const Card = ({ data, index }) => {
   return (
-    <div className="section-center m-auto text-center row col-xs-4 mt-3 row ">
+    <div className="section-center m-auto text-center row mt-3">
       {data.map((item, itemIndex) => {
         const { image, name, title, quote, id } = item;
         let position = "nextSlide";
@@ -17,7 +17,7 @@ const Card = ({ data, index }) => {
         }
         return (
           <section className={position} >
-            <div key={id} className='sliderDiv m-auto row col-8'>
+            <div key={id} className='sliderDiv m-auto row col-xs-8'>
               <div className='imgDiv text-center mt-1'>
                 <img className='rounded-circle ' src={image} alt='' />
               </div>

@@ -36,8 +36,8 @@ const CardList = () => {
     },[index]);
   
   return (
-    <div className='row container m-auto mt-2 p-2'>
-      <div className='wrapper d-flex justify-content-center align-items-center col-md-7 col-sm-7 m-auto p-2 rounded-3'>
+    <div className='row container m-auto mt-2 p-2 row'>
+      <div className='wrapper d-flex justify-content-center align-items-center col-md-8 col-xs-10  m-auto p-2 rounded-3'>
         <button
           className='leftButton border-0 p-2 d-flex align-items-center justify-content-center  display-4'
           onClick={previous}

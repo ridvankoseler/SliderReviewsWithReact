@@ -6,7 +6,7 @@ import Header from "./components/Header";
 function App() {
   return (<div>
     <Header/>
-    <div className="row col-xs-4">
+    <div className=" ">
       <CardList/>
     </div>
   </div>);
