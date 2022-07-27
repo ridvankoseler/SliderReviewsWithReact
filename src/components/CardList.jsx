@@ -36,19 +36,23 @@ const CardList = () => {
     },[index]);
   
   return (
-    
-    <>
-      <div className="d-flex justify-content-center">
-        <button className="leftButton row col-1 p-2 " onClick={previous}>
+    <div className='row container m-auto mt-2 p-2'>
+      <div className='wrapper d-flex justify-content-center align-items-center col-md-7 col-sm-7 m-auto p-2 rounded-3'>
+        <button
+          className='leftButton border-0 p-2 d-flex align-items-center justify-content-center  display-4'
+          onClick={previous}
+        >
           <FaChevronLeft />
         </button>
-        <Card data={people} index={index}/>
-        
-        <button className="rightButton row col-1 p-2 " onClick={next}>
+        <Card data={people} index={index} />
+        <button
+          className='rightButton border-0 p-2 d-flex align-items-center justify-content-center  display-4  '
+          onClick={next}
+        >
           <FaChevronRight />
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

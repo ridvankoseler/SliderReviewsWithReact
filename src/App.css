@@ -12,28 +12,28 @@ img{
     width: 10rem;
     height: 10rem;
     object-fit: cover;
-    
+    box-shadow: 1px 1px 10px blue;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+button:active{
+    transform: scale(1.1);
+    color: blue !important;
+}
+
+.wrapper{
+  box-shadow: 1px 10px 50px grey;
 }
 
 .leftButton{
-    height: 2rem;
-    width: 3rem;
-    margin: 2rem;
-    border: none;
-    background-color:silver;
-    position: relative;
-    top: 10rem;
+    background-color:rgb(142, 243, 173)
 }
 
 .rightButton{
-    height: 2rem;
-    width: 3rem;
-    margin: 2rem;
-    border: none;
-    background-color:silver;
-    position: relative;
-    top: 10rem;
-    
+background-color:rgb(142, 243, 173)
 }
 section{
     position: absolute;
@@ -54,4 +54,15 @@ section{
 }
 .nextSlide {
   transform: translateX(100%);
+}
+
+.section-center{
+    width: 80vw;
+    height: 30rem;
+    max-height: 40rem;
+    max-width: 50rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    
 }
